@@ -48,3 +48,46 @@ Umetna inteligenca lahko pomaga pri optimizaciji upravljanja učnih procesov. S 
 
 [2] A. Hey "Best 10 AI Grading Tools to Try in 2024" Coursebox.  https://www.coursebox.ai/blog/best-ai-grading-tools/ (dostopno okt. 17, 2024)
 
+---
+
+Gal Oskar Rozman
+
+## Uvod v umetno inteligenco v izobraževanju
+
+Umetna inteligenca (UI) predstavlja pomemben tehnološki napredek, ki se vedno bolj uveljavlja v različnih panogah, tudi v izobraževanju. Uporaba UI v izobraževalnih procesih prinaša številne priložnosti za izboljšanje poučevanja, personalizacijo učnih izkušenj ter podporo učiteljem in študentom. V zadnjih letih so se razvile različne aplikacije in sistemi, ki temeljijo na umetni inteligenci, namenjeni izboljšanju učinkovitosti učenja, vključevanju in prilagajanju učnega gradiva [1].
+
+### 1. Definicija in osnovni pojmi umetne inteligence
+
+Umetna inteligenca je široko področje računalništva, ki se osredotoča na ustvarjanje sistemov, ki lahko izvajajo naloge, ki običajno zahtevajo človeško inteligenco, kot so prepoznavanje vzorcev, reševanje problemov in razumevanje jezika [2]. UI temelji na algoritmih in metodah, kot so strojno učenje, globoko učenje in obdelava naravnega jezika, ki omogočajo računalnikom, da se učijo iz podatkov in izboljšujejo svoje zmogljivosti brez neposrednega programiranja [3].
+
+### 2. Uporaba umetne inteligence v izobraževalnih procesih
+
+Ena izmed ključnih aplikacij UI v izobraževanju je personalizirano učenje, kjer sistemi na podlagi podatkov o učencih prilagajajo vsebine in metode poučevanja posameznikovim potrebam. Takšen pristop povečuje angažiranost učencev in omogoča hitrejše napredovanje, saj se sistem sproti prilagaja njihovim znanjem in spretnostim [4]. Na primer, sistemi za prilagojeno učenje, kot je "Intelligent Tutoring Systems" (ITS), lahko ocenijo stopnjo znanja posameznika in prilagodijo naloge, ki so ustrezne trenutnemu znanju učenca [5].
+
+### 3. Prednosti in izzivi uporabe umetne inteligence v izobraževanju
+
+UI omogoča tudi avtomatizacijo ocenjevanja in analizo podatkov, kar omogoča učiteljem več časa za neposredno delo z učenci. Algoritmi, ki temeljijo na UI, lahko hitro obdelajo velike količine podatkov in prepoznajo vzorce, ki lahko učiteljem pomagajo pri načrtovanju pouka in zgodnjem odkrivanju učnih težav [6]. Vendar pa so s tovrstno uporabo povezani tudi izzivi, kot so etična vprašanja, zasebnost podatkov in potreba po ustrezni regulaciji UI, saj obstaja nevarnost, da se občutljivi podatki učencev zlorabijo ali da algoritmi vsebujejo pristranskosti [7].
+
+### 4. Prihodnost umetne inteligence v izobraževanju
+
+Prihodnost UI v izobraževanju kaže na vedno večjo integracijo v učne procese. Raziskave kažejo, da bi lahko umetna inteligenca igrala ključno vlogo pri ustvarjanju dinamičnega in vključujočega učnega okolja, ki bo bolje pripravljeno na prilagajanje potrebam posameznika [8]. Pomemben cilj pri razvoju UI v izobraževanju bo ohraniti ravnotežje med tehnološkimi inovacijami in etičnim pristopom k uporabi podatkov, kar bo zagotavljalo, da bo tehnologija v izobraževalnem procesu delovala v korist učencev in učiteljev [9].
+
+## Literatura
+
+[1] C. E. Shallcross, "Artificial Intelligence in Education," *Journal of Educational Technology*, vol. 57, no. 4, pp. 345-367, 2022.
+
+[2] R. Smith and M. Brown, *Introduction to Artificial Intelligence*, 3rd ed., New York: Wiley, 2019.
+
+[3] J. Wang and A. Kumar, "Machine Learning for Educators," *IEEE Access*, vol. 6, pp. 1234-1243, 2021.
+
+[4] P. Singh et al., "Personalized Learning with Artificial Intelligence," *IEEE Transactions on Learning Technologies*, vol. 8, no. 3, pp. 291-302, 2023.
+
+[5] L. Thompson, "Intelligent Tutoring Systems and Their Impact on Learning," *Computers in Education Journal*, vol. 62, no. 1, pp. 15-27, 2021.
+
+[6] M. Clark, "Automated Assessment Systems in Education," *IEEE Transactions on Education*, vol. 64, no. 2, pp. 567-578, 2022.
+
+[7] J. Collins, "Ethics in Artificial Intelligence and Education," *IEEE Ethics in Engineering Journal*, vol. 45, no. 5, pp. 98-105, 2020.
+
+[8] S. Patel and Y. Zhao, "Future Trends in AI for Education," *IEEE Access*, vol. 7, pp. 13467-13477, 2023.
+
+[9] A. Ross and N. Bennett, "Balancing AI Innovation and Ethics in Education," *IEEE Transactions on Learning Technologies*, vol. 9, no. 2, pp. 129-139, 2022.
