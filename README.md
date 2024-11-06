@@ -50,7 +50,7 @@ Prihodnost UI v izobraževanju kaže na vedno večjo integracijo v učne procese
 
 ---
 
-Vinko Kristjan
+Kristjan Vinko
 
 ## Prednosti uporabe umetne inteligence v šolah
 
