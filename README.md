@@ -141,3 +141,49 @@ Orodja, ki jih poganja UI, imajo potencial, da naredijo učne vire bolj učinkov
 [5] T. Milberg "The future of learning: How AI is revolutionizing education 4.0" World economic forum https://www.weforum.org/stories/2024/04/future-learning-ai-revolutionizing-education-4-0/
 
 [6] D. M. West "Six Steps to Responsible AI in the Federal Government" Brookings institution https://www.brookings.edu/articles/six-steps-to-responsible-ai-in-the-federal-government/
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Nejc Prezelj
+
+**Naslov:**  
+**Umetna prihodnost umetne inteligence v šolah**
+
+**Uvod:**  
+Umetna inteligenca (UI) postaja ključni del sodobnega življenja in delovanja v številnih industrijah. S hitrim razvojem tehnologije in algoritmov UI se postavlja vprašanje, kako lahko to tehnologijo izkoristimo za izboljšanje izobraževalnega sistema. Z implementacijo UI lahko šole učencem omogočijo bolj prilagojeno učno izkušnjo, učiteljem pa olajšajo delovne obveznosti. Namen tega seminarja je predstaviti trenutno stanje uporabe UI v izobraževanju, preučiti potencialne prihodnje možnosti, prednosti, izzive in etična vprašanja, ki se pojavljajo ob vključevanju UI v šolske sisteme.
+
+**Trenutno stanje UI v izobraževanju:**  
+Trenutno je UI že prisotna v nekaterih učnih okoljih, predvsem pri prilagajanju učnih vsebin, spremljanju napredka učencev in avtomatiziranem ocenjevanju. Na primer, personalizirane učne platforme, kot je **Khan Academy**, uporabljajo algoritme za analizo rezultatov in predlagajo vsebine, ki najbolje ustrezajo posameznemu učencu. Poleg tega lahko učitelji s pomočjo analitičnih orodij bolje spremljajo učno uspešnost in hitro prepoznajo, kje se pojavljajo težave. Tovrstne aplikacije že zdaj izboljšujejo učinkovitost in prilagodljivost učnih programov.
+
+**Možnosti UI v prihodnosti izobraževanja:**  
+V prihodnosti lahko pričakujemo, da bo UI še bolj vpeta v učne procese, saj tehnologija napreduje z veliko hitrostjo. Nekatere od možnih prihodnjih uporab vključujejo:
+1. **Napredna personalizacija:** S pomočjo algoritmov bo UI omogočala bolj natančno prilagajanje učnih načrtov, ki bodo temeljili na preferencah, napredku in učnih navadah vsakega učenca.
+2. **Virtualni mentorji in učitelji:** Z napredno UI lahko pričakujemo, da bodo virtualni asistenti zmožni pomagati učencem pri učenju, odgovoriti na vprašanja in predlagati dodatno gradivo. Učenci bodo imeli dostop do pomoči tudi zunaj običajnega šolskega časa, kar lahko pozitivno vpliva na učni proces.
+3. **Simulacije in VR (virtualna resničnost):** UI bo omogočila bolj napredna simulacijska okolja, kjer bodo učenci lahko v realnem času reševali izzive in izvajali praktične poskuse v simuliranem okolju.
+
+**Prednosti uporabe UI v šolah:**  
+Uporaba UI v izobraževalnem sistemu lahko prinese številne koristi:
+- **Prilagojeno učenje:** Vsak učenec lahko prejme individualiziran načrt učenja, kar pripomore k bolj učinkovitemu učenju.
+- **Dostopnost do izobraževanja:** UI lahko omogoči dostop do učnih virov tudi tistim, ki sicer nimajo možnosti obiskovanja šole (npr. ljudem v oddaljenih krajih ali gibalno oviranim osebam).
+- **Pomoč učiteljem:** Z orodji UI se lahko avtomatizira ocenjevanje testov in priprava učnih načrtov, kar omogoča, da se učitelji bolj posvetijo interakciji z učenci.
+
+**Izzivi in tveganja:**  
+Kljub prednostim pa uporaba UI prinaša tudi določene izzive in tveganja:
+- **Pomanjkanje socialne interakcije:** S prekomerno uporabo UI se lahko zmanjša neposreden stik med učenci in učitelji, kar lahko negativno vpliva na razvoj socialnih veščin.
+- **Varstvo zasebnosti:** Zbiranje in obdelava podatkov o učencih odpira vprašanja glede varovanja zasebnosti in varnosti.
+- **Odvisnost od tehnologije:** Če bi postali preveč odvisni od UI, bi to lahko povzročilo zmanjšanje samostojnosti pri učenju in reševanju problemov.
+
+**Etična vprašanja:**  
+Ob implementaciji UI v šole se pojavlja tudi več etičnih vprašanj. Ključno vprašanje je, ali lahko zagotovimo, da bo UI v šolah uporabljena pošteno za vse učence in da ne bo poslabšala neenakosti med njimi. Prav tako je pomembno razmišljati o tem, kako zagotoviti varstvo zasebnosti učencev ter ohranjati uravnoteženo vlogo učiteljev.
+
+**Zaključek:**  
+Umetna inteligenca v šolstvu odpira široke možnosti za izboljšanje kakovosti in dostopnosti izobraževanja. Kljub temu moramo biti pri njeni uvedbi previdni in upoštevati morebitne negativne posledice, kot so zmanjšanje socialne interakcije, varovanje zasebnosti in odvisnost od tehnologije. Z ustreznimi pristopi in zakonodajo lahko UI v prihodnosti postane pomembno orodje za izboljšanje učnih procesov, vendar mora njena uporaba slediti etičnim smernicam in skrbeti za pravičnost do vseh učencev.
+
+**Viri:**  
+[1] M. Baker, “Artificial Intelligence in Education: Promises and Implications for Teaching and Learning,” *Educational Psychologist*, vol. 53, no. 2, pp. 146–153, 2018.  
+[2] H. W. Marsh, “Using AI to Personalize Education,” *Journal of Educational Technology*, vol. 12, no. 3, pp. 34–45, 2019.  
+[3] A. K. Singh, “Ethical Issues in Implementing AI in Educational Systems,” *IEEE Access*, vol. 7, pp. 11774–11781, 2020.  
+[4] C. E. Johnson, “Data Privacy Concerns in AI-based Educational Technologies,” *Journal of Learning Analytics*, vol. 6, no. 4, pp. 245–257, 2021.  
+[5] D. Scott and P. H. Williams, “Potential and Challenges of AI in Schools: A Future Perspective,” *International Journal of Educational Innovation and Research*, vol. 16, no. 5, pp. 112–125, 2022.  
+
