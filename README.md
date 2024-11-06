@@ -106,3 +106,38 @@ Umetna inteligenca lahko pomaga pri optimizaciji upravljanja učnih procesov. S 
 [7] L. Langreo "Teachers Told Us They’ve Used AI in the Classroom." Education week. https://www.edweek.org/technology/teachers-told-us-theyve-used-ai-in-the-classroom-heres-why/2024/01 (dostopno nov. 5, 2024)
 
 [8] A. Guerra "The Future Benefits of Artificial Intelligence for Students" Education week. https://urbeuniversity.edu/blog/the-future-benefits-of-artificial-intelligence-for-students (dostopno nov. 5, 2024)
+
+---
+
+Luka Puhmeister
+
+## Izzivi in omejitve uporabe umetne intelligence v šolah
+
+### 3.1 priložnosti in izzivi
+Umetna inteligenca se vse bolj uporablja na različnih področjih, vključno z izobraževalnim. Njena uporaba sega od poosebljenih učnih orodij do avtomatiziranih sistemov ocenjevanja. Čeprav umetna inteligenca prinaša številne koristi, v šole prinaša tudi nove izzive, ki jih je treba skrbno obravnavati. Te izzive in priložnosti lahko razumemo, če raziščemo omejitve umetne intelligence ter kako lahko pomaga učiteljem pri ocenjevanju in analizi podatkov, ter učinkovitost in dostopnost kot učni vir.
+
+### 3.2 Izzivi in omejitve uporabe UI v šola
+Čeprav umetna inteligenca ponuja ogromen potencial za revolucijo v izobraževanju, ima tudi pomembne omejitve. Ena od glavnih težav je, da tehnologija ni zmožna v celoti posnemati človeškega poučevanja. Sistem lahko posredujejo le predprogramirane informacije, vendar se ne moreja prilagoditi čustvenim in socialnim potrebam učencev kot učiteljev. Poleg tega šole v manj razvitih območjih nimajo potrebne infrastrukture za učinkovito uvedbo umetne inteligence. Po poročilu EdTech Magazine, je dostop do dovolj hitrega interneta in napredne strojne opreme ključnega pomena, a veliko šol še nima teh virov. Omejitev predstavlja tudi trenutni razvoj umetne inteligence, saj modeli strojnega učenja so odvisni od podatkov, kar lahko vodi do pristrans.
+
+### 3.3 Etika in varnost podatkov
+Naraščajoča odvisnost umetne inteligence v šolah odpira tudi etična vprašanja, predvsem glede varnosti podatkov. Ker AI sistemi potrebujejo ogromne količine osebnih podatkov učencev, kot so vzorci učenja, ocene in vedenjski podatki, šole postanejo tarče kibernetskih napadov. Pojavljajo se tudi vprašanja, kako se ti podatki uporabljajo in kdo do njih dostopa. Obstajajo skrbi, da bi jih lahko tretja podjetja zlorabila za dobiček. Kot poroča The Guardian, mora uvajanje umetne inteligence spremljati močna politika varovanja podatkov, da se zaščiti zasebnost učencev. Etična vprašanja se pojavijo tudi zaradi potenciala umetne inteligence za krepitev stereotipov, saj lahko odraža pristranosti v podatkih, iz katerih se uči.
+
+### 3.4 Pomoč učiteljem pri ocenjevanju in analizi podatkov
+Ena najbolj privlačnih aplikacij umetne inteligence v šolah je pomoč učiteljem pri ocenjevanju in analizi podatkov. Avtomatizirani sistemi ocenjevanja učiteljem prihranijo čas, kar jim omogoča večjo osredotočenost na angažiranje učencev in načrtovanje učnih ur. UI lahko analizira podatke o uspešnosti učencev ter prepozna področja, kjer potrebujemo dodatno podporo, kar omogoča boljše prilagajanje učnih strategij. Študija iz leta 2023, izvedena s strani The Learning Agency Lab, je pokazala, da so učitelji z uporabo UI orodij učinkoviteje upravljali administrativne naloge, kar je zmanjšalo stres in izboljšalo kakovost poučevanja. Vendar pa UI ne sme nadomestiti učitelja pri ocenjevanju nalog, saj je človeška presoja ključna za bolj subjektivne naloge, kot so eseji ali ustvarjalni projekti.
+
+### 3.5 Učinkovitost in dostopnost učnih virov
+Orodja, ki jih poganja UI, imajo potencial, da naredijo učne vire bolj učinkovite in dostopne. Preko prilagodljivih učnih sistemov UI personalizira vsebine glede na močne in šibke točke učencev ter hitrost njihovega učenja, kar ustvarja bolj vključujoče učne izkušnje. Platforme, kot sta Khan Academy in Duolingo, uporabljajo UI za personalizirane učne poti, ki izboljšujejo zadrževanje znanja. Vendar pa dostopnost ostaja problem, saj nimajo vsi učenci enakega dostopa do potrebne tehnologije. Socioekonomske razlike lahko omejijo dostop do kakovostnih digitalnih virov, kar povečuje izobraževalno vrzel.
+
+## Literatura
+
+[1] D. Hutchins "How Artificial Intelligence is Boosting Personalization in Higher Education". EdTech Magazine  https://edtechmagazine.com/higher/article/2017/11/ai-boosts-personalized-learning-higher-education
+
+[2] A. Burroughs "Q&A: Artificial Intelligence Expert Shares His Vision of the Future of Education". EdTech Magazine  https://edtechmagazine.com/higher/article/2017/04/qa-artificial-intelligence-expert-shares-his-vision-future-education
+
+[3] S. Levin "Bias deep inside the code': the problem with AI 'ethics' in Silicon Valley" The Guardian https://www.theguardian.com/technology/2019/mar/28/big-tech-ai-ethics-boards-prejudice
+
+[4] U. Boser "How AI Is Transforming The Future Of Learning" The learning agency lab https://the-learning-agency-lab.com/the-learning-curve/how-ai-is-transforming-learning/#comments
+
+[5] T. Milberg "The future of learning: How AI is revolutionizing education 4.0" World economic forum https://www.weforum.org/stories/2024/04/future-learning-ai-revolutionizing-education-4-0/
+
+[6] D. M. West "Six Steps to Responsible AI in the Federal Government" Brookings institution https://www.brookings.edu/articles/six-steps-to-responsible-ai-in-the-federal-government/
