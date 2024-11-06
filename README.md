@@ -1,4 +1,4 @@
-Vinko Kristjan
+Vinko Kristjan - 2
 
 Prednosti uporabe umetne inteligence v šolah
 2.1 Personalizacija učenja
