@@ -1,1 +1,30 @@
 CILJI
+ 5 Milestones za Spletno Stran **Matematika AI**
+
+1. **Osnovna funkcionalnost in postavitev (MVP - Minimal Viable Product):**
+   - Postavitev glavne strukture spletne strani (HTML/CSS).
+   - Implementacija osnovnih funkcij: navigacija, uvodna stran, orodja (Photomath, GeoGebra itd.), ocenjevanje.
+   - Dodajanje temnega načina in prikaz trenutnega datuma.
+
+2. **Interaktivnost in igrifikacija:**
+   - Dodajanje funkcionalnosti, kot je **CookieClicker** za privabljanje uporabnikov.
+   - Razširitev interaktivnih orodij z dinamično vsebino (npr. interaktivni kvizi, matematični izzivi).
+   - Možnost personalizacije, kot je shranjevanje ocen uporabnika in beleženje napredka.
+
+3. **Vsebina in lokalizacija:**
+   - Razširitev vsebine na druga področja: naravoslovje, slovnica, umetnost.
+   - Dodajanje podpore za več jezikov (s posebnim poudarkom na slovenskem jeziku).
+   - Oblikovanje kakovostnih učnih materialov in videovodičev za vsako temo.
+
+4. **Integracija naprednih AI-funkcij:**
+   - Vpeljava umetne inteligence za reševanje matematičnih problemov, razlago rešitev in predlaganje nalog glede na nivo uporabnika.
+   - Integracija AI pogovornega asistenta za pomoč pri učenju in odgovarjanje na vprašanja v realnem času.
+   - Personalizirana priporočila glede na interese in dosežke uporabnikov.
+
+5. **Skupnost in analiza:**
+   - Dodajanje foruma ali prostora za sodelovanje uporabnikov (izmenjava rešitev, idej in izkušenj).
+   - Implementacija sistema za analitiko (sledenje, katere vsebine so najbolj priljubljene in kako uporabniki uporabljajo stran).
+   - Organizacija izzivov in nagradnih iger za motivacijo uporabnikov, kot so mesečne tekme v znanju matematike.
+
+Ključni cilj:
+Z vsako fazo izboljšati uporabniško izkušnjo, povečati angažiranost in ustvariti kakovostno, interaktivno ter zabavno spletno platformo za učenje.
