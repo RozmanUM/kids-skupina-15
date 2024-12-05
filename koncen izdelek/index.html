@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI POMOČNIK</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1E3C72, #2A5298);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #121212, #333);
+            color: #e0e0e0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #1e1e1e; 
+            padding: 15px;
+            border-radius: 30px;
+            margin: 20px auto;
+            width: fit-content;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #00bfff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #00bfff;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode-button:hover {
+            background: white;
+            color: #1E3C72;
+        }
+
+        body.dark-mode .dark-mode-button {
+            border-color: #e0e0e0;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .dark-mode-button:hover {
+            background: #e0e0e0;
+            color: #121212;
+        }
+
+        /* Date Display */
+        .date-display {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        body.dark-mode .date-display {
+            color: #e0e0e0;
+            border-color: #e0e0e0;
+        }
+
+        /* Intro Section */
+        .intro {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .intro .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Icon Section */
+        .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .icon-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #3a567f, #426ea8);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #a9f0ff;
+            width: 150px;
+        }
+
+        .icon-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon-card img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .icon-card p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 1rem;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date-display" id="date-display"></div>
+        <nav class="menu">
+            <a href="matematikaAi.html">MATEMATIKA</a>
+            <a href="slovnicaAi.html">SLOVNICA</a>
+            <a href="prednosti.html">ZAKAJ AI?</a>
+            <a href="index.html">HOME</a>
+        </nav>
+        <button id="dark-mode-toggle" class="dark-mode-button">🌙</button>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>AI POMOČNIK</h1>
+            <p class="tagline">Vaš osebni vodič v svet umetne inteligence in znanja!</p>
+            <p>
+                Dobrodošli na izobraževalnem portalu, kjer lahko hitro dostopate do vsebin na različnih področjih,
+                kot so matematika, slovnica, naravoslovje in umetnost. Kliknite na izbrano temo in poglobite svoje znanje s kakovostnimi viri in interaktivnimi vajami!
+            </p>
+            <p>
+                Spoznajte, zakaj je umetna inteligenca danes tako učinkovita pomočnica pri učenju in kako vpliva na sodobni šolski sistem.
+            </p>
+        </section>
+
+        <section class="icons">
+            <div class="icon-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4720/4720458.png" alt="Math Education">
+                <p>Matematika</p>
+            </div>
+            <div class="icon-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4277/4277104.png" alt="AI Icon 1">
+                <p>Slovnica</p>
+            </div>
+            <div class="icon-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6554/6554176.png" alt="AI Icon 2">
+                <p>Naravoslovje</p>
+            </div>
+            <div class="icon-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048944.png" alt="AI Icon 3">
+                <p>Umetnost</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matematika AI. Vse pravice pridržane.</p>
+    </footer>
+
+    <script>
+        const dateDisplay = document.getElementById('date-display');
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString('sl-SI', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        dateDisplay.textContent = formattedDate;
+
+
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.textContent = '☀️';
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('dark-mode', 'enabled');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cookie Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cookie-btn {
+            border: none;
+            background-color: transparent;
+        }
+        .cookie-btn img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .score {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cookie Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cookie-btn {
+            border: none;
+            background-color: transparent;
+        }
+        .cookie-btn img {
+            width: 90px;
+            height: 90px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .cookie-btn img:hover {
+            transform: scale(1.1); 
+        }
+        .score {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pritisnite piškotek!</h1>
+    <button class="cookie-btn" onclick="incrementScore()">
+        <img src="https://i.pinimg.com/originals/0e/c1/28/0ec128203b2058b9837423f6c4d3161d.png" alt="Cookie">
+    </button>
+    <div class="score">Score: <span id="score">0</span></div>
+
+    <script>
+        let score = 0;
+
+        // Load the score from localStorage (if it exists)
+        window.onload = function() {
+            const savedScore = localStorage.getItem('cookieClickerScore');
+            if (savedScore) {
+                score = parseInt(savedScore);
+                document.getElementById("score").innerText = score;
+            }
+        };
+
+        // Function to increment score and save it to localStorage
+        function incrementScore() {
+            score++;
+            document.getElementById("score").innerText = score;
+            localStorage.setItem('cookieClickerScore', score); // Save the score
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika AI</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1E3C72, #2A5298);
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #121212, #333);
+            color: #e0e0e0;
+        }
+
+        /* Date Display */
+        .date-display {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        body.dark-mode .date-display {
+            color: #e0e0e0;
+            border-color: #e0e0e0;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            background-color: #1e1e1e; 
+            color: #00bfff; 
+            border-radius: 50px;
+            padding: 10px 50px; 
+            width: fit-content; 
+            margin: 20px auto; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+        }
+
+        .menu a {
+            text-decoration: none; 
+            color: #00bfff; 
+            font-family: Arial, sans-serif; 
+            font-size: 1.2rem; 
+            font-weight: bold; 
+            padding: 10px 30px;
+            transition: color 0.3s ease, transform 0.3s ease; 
+            border-radius: 20px; 
+        }
+
+        .menu a:hover {
+            color: #ffffff; /* Change text to white on hover */
+            background-color: #00bfff; 
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* Tools Section */
+        .tools {
+            text-align: center;
+            padding: 50px 10px;
+        }
+
+        .tools h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .tools-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 30px; /* More space between items */
+            justify-content: center;
+            padding: 40px; /* Increased padding for breathing room */
+        }
+
+        .tool:hover {
+            transform: scale(1.05); 
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .tool {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* More space between the icon and text */
+            background: linear-gradient(135deg, #3a567f, #426ea8);
+            border-radius: 30px; /* Slightly more rounded */
+            padding: 25px 30px; /* Increased padding to make them bigger */
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+            color: #a9f0ff;
+            font-size: 1.5rem; /* Bigger text */
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .tool img {
+            width: 70px; /* Increased icon size */
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tool p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .tool:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+        }
+
+        /* Rating Section */
+        .rating {
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .stars span {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode-button:hover {
+            background: white;
+            color: #1E3C72;
+        }
+
+        body.dark-mode .dark-mode-button {
+            border-color: #e0e0e0;
+            color: #e0e0e0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Date and Dark Mode Toggle -->
+    <div class="date-display" id="date-display"></div>
+    <button id="dark-mode-toggle" class="dark-mode-button">🌙</button>
+
+    <header>
+        <div class="date-display" id="date-display"></div>
+        <nav class="menu">
+            <a href="matematikaAi.html">MATEMATIKA</a>
+            <a href="slovnicaAi.html">SLOVNICA</a>
+            <a href="prednosti.html">ZAKAJ AI?</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>MATEMATIKA AI</h1>
+            <p>Dobrodošli na naši spletni strani!</p>
+            <p>Smo vaš most med umetno inteligenco in svetom matematike...</p>
+        </section>
+
+        <section class="tools">
+            <h2>Raziskujte, ustvarjajte in izboljšajte svoje matematične sposobnosti z nami!</h2>
+            <div class="tools-list">
+                <div class="tool">
+                    <img src="Photomath.png" alt="Photomath">
+                    <span>Photomath</span>
+                </div>
+                <div class="tool">
+                    <img src="Astraaiđ.png" alt="Astra AI">
+                    <span>Astra AI</span>
+                </div>
+                <div class="tool">
+                    <img src="Geogebra.png" alt="Geo Gebra">
+                    <span>Geo Gebra</span>
+                </div>
+                <div class="tool">
+                    <img src="WOLDFRAM.jfif" alt="Wolfram Alpha">
+                    <span>Wolfram|Alpha</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="rating">
+            <h2>OCENI NAS</h2>
+            <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <textarea placeholder="Podaj svoje mnenje." rows="5"></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matematika AI. Vse pravice pridržane.</p>
+    </footer>
+
+    <script>
+        // Date Display in Slovenian Format
+        const dateDisplay = document.getElementById('date-display');
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString('sl-SI', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        });
+        dateDisplay.textContent = formattedDate;
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌙';
+        });
+    </script>
+</body>
+</html>

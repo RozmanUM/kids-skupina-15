@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="date-display" id="date-display"></div>
+        <nav class="menu">
+            <a href="matematikaAi.html">MATEMATIKA</a>
+            <a href="slovnicaAi.html">SLOVNICA</a>
+            <a href="prednosti.html">ZAKAJ AI?</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1E3C72, #2A5298);
+        color: white;
+        width: 100%;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .intro {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+
+    .tools {
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .tools h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center;
+        padding: 40px;
+    }
+    .tool:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .tool {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(135deg, #3a567f, #426ea8);
+        border-radius: 30px;
+        padding: 25px 30px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); 
+        color: #a9f0ff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .tool img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .tool p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+
+    .tool:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .rating {
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .stars span {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 80%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        color: white;
+    }
+
+    footer {
+        background-color: #222;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1rem;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        background-color: #1e1e1e; 
+        color: #00bfff; 
+        border-radius: 50px;
+        padding: 10px 50px; 
+        width: fit-content; 
+        margin: 20px auto; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+    }
+
+    .menu a {
+        text-decoration: none; 
+        color: #00bfff; 
+        font-family: Arial, sans-serif; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        padding: 10px 30px;
+        transition: color 0.3s ease, transform 0.3s ease; 
+        border-radius: 20px; 
+    }
+
+    .menu a:hover {
+        color: #ffffff;
+        background-color: #00bfff; 
+        transform: scale(1.1);
+    }
+
+    </style>
+
+    <main>
+        <section class="intro">
+            <h1>Prednosti uporabe umetne intelgience v šolah</h1>
+            <p>Umetna inteligenca – ključ do prilagojenega učenja in uspešnejše prihodnosti!</p>
+        </section>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">👨‍🏫</div>
+                    <h3>Virtualni tutorji</h3>
+                    <p>
+                        Z analizo podatkov o učenju sistem prepozna njihove šibke in močne točke ter oblikuje prilagojene učne poti. Tako lahko napredujejo svojim tempom in na način, ki jim najbolj ustreza. Na primer, UI aplikacije ponujajo dodatne vaje za učence, ki potrebujejo več pomoči, medtem ko naprednejšim omogočajo zahtevnejše izzive.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon">🎓</div>
+                    <h3>Pomoč pri ocenjevanju</h3>
+                    <p>
+                        AI orodja za ocenjevanje pospešujejo zahtevne naloge in učiteljem omogočajo več časa za delo z učenci. Zagotavljajo pravičnost z enotnimi merili ocenjevanja, kar odpravlja pristranskost. Nudijo podrobne povratne informacije, ki učencem pomagajo razumeti in izboljšati svoje znanje.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔧</div>
+                    <h3>Personalizacija učenja</h3>
+                    <p>
+                        Umetna inteligenca prilagaja učne vsebine potrebam posameznih učencev z analizo njihovih šibkih in močnih točk. To vodi do bolj učinkovitih in prilagojenih učnih izkušenj.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matematika AI. Vse pravice pridržane.</p>
+    </footer>
+</body>
+</html>
