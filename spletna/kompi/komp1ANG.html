@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer 1</title>
+    <link rel="stylesheet" href="C:/sola/KIDS/Skupina3/spletna/assets/css/komp1.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="C:/sola/KIDS/Skupina3/spletna/domaca.html" class="menu-item">
+        <img src="C:/sola/KIDS/Skupina3/spletna/assets/images/pc-display.svg" alt="Ikona" />
+        PcNaBudget-u
+        </a>
+      </div>
+      <div class="menu">
+        <a href="#" class="menu-item">
+          <img
+            src="C:/sola/KIDS/Skupina3/spletna/assets/images/pc-horizontal.svg"
+            alt="Pre-buildi Ikona"
+          />
+          Pre-buildi
+        </a>
+        <a href="#" class="menu-item">
+          <img
+            src="C:/sola/KIDS/Skupina3/spletna/assets/images/cookie.svg"
+            alt="Pisko"
+          />
+          G. cookie
+        </a>
+      </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="C:/sola/KIDS/Skupina3/spletna/assets/images/komp1.png" alt="Gaming PC">
+        </div>
+        <div class="specifications">
+            <h2>SPECIFICATIONS:</h2>
+            
+            <div class="spec">
+                <h3>PROCESOR:</h3>
+                <p id="processor-description" class="description">
+                    The Intel Core i7-13700K is a powerful processor 
+                    with 16 cores (8 P-cores and 8 E-cores), 24 threads ter 
+                    frequencies up to 5.4 GHz, ideal for games, 
+                    content creation and multitasking.
+                </p>
+                <span class="more" onclick="toggleDescription('processor-description')">Preberi več</span>
+            </div>
+        
+            <div class="spec">
+                <h3>GRAPHIC CARD:</h3>
+                <p id="gpu-description" class="description">
+                    The Gigabyte RTX 4070 SUPER has 12 GB of GDDR6X 
+                    memory, NVIDIA DLSS 3 and third generation RT 
+                    cores, allowing for superior gaming performance 
+                    games and content creation. The card is equipped with 
+                    efficient WINDFORCE cooling and flexible 
+                    RGB lighting.
+                </p>
+                <span class="more" onclick="toggleDescription('gpu-description')">Preberi več</span>
+            </div>
+        
+            <div class="spec">
+                <h3>RAM:</h3>
+                <p id="memory-description" class="description">
+                    Corsair Vengeance RGB 32GB DDR5 enables speed 
+                    up to 6400 MHz, low latency, lively ten-zone 
+                    RGB lighting and efficient aluminum cooling 
+                    refrigerator, which is ideal for gaming and multitasking.</p><span class="more" onclick="toggleDescription('memory-description')">Preberi več</span>
+            </div>
+        
+            <script>
+                function toggleDescription(id) {
+                    const descriptionElement = document.getElementById(id);
+        
+                    if (descriptionElement.classList.contains("expanded")) {
+                        descriptionElement.classList.remove("expanded");
+                        descriptionElement.querySelector(".more").textContent = "Preberi več";
+                        descriptionElement.style.whiteSpace = "nowrap";
+                    } else {
+                        descriptionElement.classList.add("expanded");
+                        descriptionElement.querySelector(".more").textContent = "Skrij";
+                        descriptionElement.style.whiteSpace = "normal";
+                    }
+                }
+            </script>
+</body>
+</html>

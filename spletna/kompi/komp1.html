@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>računalnik 1</title>
+    <link rel="stylesheet" href="C:/sola/KIDS/Skupina3/spletna/assets/css/komp1.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="C:/sola/KIDS/Skupina3/spletna/domaca.html" class="menu-item">
+        <img src="C:/sola/KIDS/Skupina3/spletna/assets/images/pc-display.svg" alt="Ikona" />
+        PcNaBudget-u
+        </a>
+      </div>
+      <div class="menu">
+        <a href="#" class="menu-item">
+          <img
+            src="C:/sola/KIDS/Skupina3/spletna/assets/images/pc-horizontal.svg"
+            alt="Pre-buildi Ikona"
+          />
+          Pre-buildi
+        </a>
+        <a href="#" class="menu-item">
+          <img
+            src="C:/sola/KIDS/Skupina3/spletna/assets/images/cookie.svg"
+            alt="Pisko"
+          />
+          G. Piškotek
+        </a>
+      </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="C:/sola/KIDS/Skupina3/spletna/assets/images/komp1.png" alt="Gaming PC">
+        </div>
+        <div class="specifications">
+            <h2>SPECIFIKACIJE:</h2>
+            
+            <div class="spec">
+                <h3>PROCESOR:</h3>
+                <p id="processor-description" class="description">
+                    Intel Core i7-13700K je zmogljiv procesor 
+                    s 16 jedri (8 P-jeder in 8 E-jeder), 24 niti ter 
+                    frekvencami do 5,4 GHz, idealen za igre, 
+                    ustvarjanje vsebin in večopravilnost.
+                </p>
+                <span class="more" onclick="toggleDescription('processor-description')">Preberi več</span>
+            </div>
+        
+            <div class="spec">
+                <h3>GRAFIČNA KARTICA:</h3>
+                <p id="gpu-description" class="description">
+                  Gigabyte RTX 4070 SUPER ima 12 GB GDDR6X 
+                  pomnilnika, NVIDIA DLSS 3 in tretjo generacijo RT 
+                  jeder, kar omogoča vrhunsko zmogljivost pri igranju 
+                  iger in ustvarjanju vsebin. Kartica je opremljena z 
+                  učinkovitim hlajenjem WINDFORCE in prilagodljivo 
+                  RGB osvetlitvijo.
+                </p>
+                <span class="more" onclick="toggleDescription('gpu-description')">Preberi več</span>
+            </div>
+        
+            <div class="spec">
+                <h3>POMNILNIK:</h3>
+                <p id="memory-description" class="description">
+                  Corsair Vengeance RGB 32GB DDR5 omogoča hitrosti 
+                  do 6400 MHz, nizko zakasnitev, živahno desetconsko 
+                  RGB osvetlitev ter učinkovito hlajenje z aluminijastim 
+                  hladilnikom, kar je idealno za igranje iger in večopravilnost.</p>
+                <span class="more" onclick="toggleDescription('memory-description')">Preberi več</span>
+            </div>
+        
+            <script>
+                function toggleDescription(id) {
+                    const descriptionElement = document.getElementById(id);
+        
+                    if (descriptionElement.classList.contains("expanded")) {
+                        descriptionElement.classList.remove("expanded");
+                        descriptionElement.querySelector(".more").textContent = "Preberi več";
+                        descriptionElement.style.whiteSpace = "nowrap";
+                    } else {
+                        descriptionElement.classList.add("expanded");
+                        descriptionElement.querySelector(".more").textContent = "Skrij";
+                        descriptionElement.style.whiteSpace = "normal";
+                    }
+                }
+            </script>
+</body>
+</html>
