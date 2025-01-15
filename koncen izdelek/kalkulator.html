@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI POMOČNIK - Kalkulator</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1E3C72, #2A5298);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #121212, #333);
+            color: #e0e0e0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #1e1e1e; 
+            padding: 15px;
+            border-radius: 30px;
+            margin: 20px auto;
+            width: fit-content;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #00bfff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #00bfff;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode-button:hover {
+            background: white;
+            color: #1E3C72;
+        }
+
+        body.dark-mode .dark-mode-button {
+            border-color: #e0e0e0;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .dark-mode-button:hover {
+            background: #e0e0e0;
+            color: #121212;
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        /* Calculator Styles */
+        .calculator {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #2A5298;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .calculator input {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            text-align: right;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .calculator button {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #00bfff;
+            color: white;
+            border: none;
+        }
+
+        .calculator button:hover {
+            background-color: #0077a1;
+        }
+
+        .history {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date-display" id="date-display"></div>
+        <nav class="menu">
+            <a href="matematikaAi.html">MATEMATIKA</a>
+            <a href="slovnicaAi.html">SLOVNICA</a>
+            <a href="prednosti.html">ZAKAJ AI?</a>
+            <a href="index.html">HOME</a>
+            <a href="calculator.html">KALKULATOR</a>
+        </nav>
+        <button id="dark-mode-toggle" class="dark-mode-button">🌙</button>
+        <div class="language-switch" id="language-switch">EN</div>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div>
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button onclick="press('/')">/</button>
+            </div>
+            <div>
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button onclick="press('*')">*</button>
+            </div>
+            <div>
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button onclick="press('-')">-</button>
+            </div>
+            <div>
+                <button onclick="press('0')">0</button>
+                <button onclick="press('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="press('+')">+</button>
+            </div>
+            <div>
+                <button onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+
+        <div class="history" id="history"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Pomočnik. Vse pravice pridržane.</p>
+    </footer>
+
+    <script>
+        // Current language and calculator functionality
+        let score = 0;
+        const display = document.getElementById('display');
+        const historyElement = document.getElementById('history');
+        let currentExpression = '';
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.textContent = '☀️';
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('dark-mode', 'enabled');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+
+        // Calculator Functions
+        function press(value) {
+            currentExpression += value;
+            display.value = currentExpression;
+        }
+
+        function clearDisplay() {
+            currentExpression = '';
+            display.value = '';
+        }
+
+        function calculate() {
+            try {
+                const result = eval(currentExpression);
+                historyElement.textContent = `Prejšnji: ${currentExpression} = ${result}`;
+                currentExpression = result.toString();
+                display.value = currentExpression;
+            } catch (e) {
+                display.value = 'Napaka';
+                currentExpression = '';
+            }
+        }
+
+        // Language Switcher
+        const languageSwitch = document.getElementById('language-switch');
+        let currentLanguage = 'en';
+        const translations = {
+            'en': {
+                title: 'AI Assistant - Calculator',
+                btnClear: 'Clear',
+                btnCalculate: 'Calculate',
+                menuMatematika: 'MATH',
+                menuSlovnica: 'GRAMMAR',
+                menuHome: 'HOME',
+                menuCalculator: 'CALCULATOR'
+            },
+            'sl': {
+                title: 'AI Pomočnik - Kalkulator',
+                btnClear: 'Počisti',
+                btnCalculate: 'Izračunaj',
+                menuMatematika: 'MATEMATIKA',
+                menuSlovnica: 'SLOVNICA',
+                menuHome: 'DOMOV',
+                menuCalculator: 'KALKULATOR'
+            },
+            'de': {
+                title: 'KI-Assistent - Rechner',
+                btnClear: 'Löschen',
+                btnCalculate: 'Berechnen',
+                menuMatematika: 'MATHEMATIK',
+                menuSlovnica: 'GRAMMATIK',
+                menuHome: 'STARTSEITE',
+                menuCalculator: 'RECHNER'
+            },
+            'es': {
+                title: 'Asistente IA - Calculadora',
+                btnClear: 'Limpiar',
+                btnCalculate: 'Calcular',
+                menuMatematika: 'MATEMÁTICAS',
+                menuSlovnica: 'GRAMÁTICA',
+                menuHome: 'INICIO',
+                menuCalculator: 'CALCULADORA'
+            }
+        };
+
+        languageSwitch.addEventListener('click', () => {
+            switch (currentLanguage) {
+                case 'en': currentLanguage = 'sl'; break;
+                case 'sl': currentLanguage = 'de'; break;
+                case 'de': currentLanguage = 'es'; break;
+                default: currentLanguage = 'en'; break;
+            }
+            languageSwitch.textContent = currentLanguage.toUpperCase();
+            document.title = translations[currentLanguage].title;
+            
+            // Update Navigation Links
+            document.querySelectorAll('.menu a').forEach((link, index) => {
+                switch (index) {
+                    case 0: link.textContent = translations[currentLanguage].menuMatematika; break;
+                    case 1: link.textContent = translations[currentLanguage].menuSlovnica; break;
+                    case 2: link.textContent = translations[currentLanguage].menuCalculator; break;
+                    case 3: link.textContent = translations[currentLanguage].menuHome; break;
+                }
+            });
+
+            // Update Buttons (Clear and Calculate)
+            document.querySelectorAll('.calculator button')[0].textContent = translations[currentLanguage].btnClear;
+            document.querySelectorAll('.calculator button')[1].textContent = translations[currentLanguage].btnCalculate;
+        });
+    </script>
+</body>
+</html>
